@@ -1,0 +1,60 @@
+{
+  "text_model": {
+    "dataset_size": 2009,
+    "label_distribution": {
+      "leak_risk": 669,
+      "safe": 670,
+      "sensitive": 670
+    },
+    "test_accuracy": 1.0,
+    "test_macro_f1": 1.0,
+    "classification_report": {
+      "leak_risk": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 134.0
+      },
+      "safe": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 134.0
+      },
+      "sensitive": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 134.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 402.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 402.0
+      }
+    }
+  },
+  "behavior_model": {
+    "dataset_size": 1200,
+    "test_accuracy": 1.0,
+    "test_macro_f1": 1.0,
+    "feature_importances": {
+      "gio_gui": 0.0989,
+      "la_ngoai_cong_ty": 0.1699,
+      "dung_luong_mb": 0.3193,
+      "so_lan_gui": 0.2689,
+      "ip_la": 0.0503,
+      "thiet_bi_la": 0.0866,
+      "usb_copy": 0.0061
+    },
+    "avg_positive_probability": 0.2497
+  }
+}
