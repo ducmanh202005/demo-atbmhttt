@@ -1,60 +1,137 @@
 {
   "text_model": {
-    "dataset_size": 2009,
+    "dataset_size": 13023,
+    "base_rows": 13023,
+    "feedback_rows_used": 0,
     "label_distribution": {
-      "leak_risk": 669,
-      "safe": 670,
-      "sensitive": 670
+      "confidential": 4,
+      "credential": 3000,
+      "financial": 2417,
+      "leak_risk": 3669,
+      "pii": 3253,
+      "safe": 680
     },
-    "test_accuracy": 1.0,
-    "test_macro_f1": 1.0,
-    "classification_report": {
+    "best_model_name": "random_forest",
+    "candidate_models": {
+      "logistic_regression": {
+        "test_accuracy": 0.9985,
+        "test_macro_f1": 0.8315
+      },
+      "linear_svm": {
+        "test_accuracy": 0.9988,
+        "test_macro_f1": 0.8318
+      },
+      "naive_bayes": {
+        "test_accuracy": 0.9981,
+        "test_macro_f1": 0.8307
+      },
+      "random_forest": {
+        "test_accuracy": 0.9992,
+        "test_macro_f1": 0.832
+      }
+    },
+    "best_model_report": {
+      "confidential": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "credential": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 600.0
+      },
+      "financial": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 483.0
+      },
       "leak_risk": {
         "precision": 1.0,
         "recall": 1.0,
         "f1-score": 1.0,
-        "support": 134.0
+        "support": 734.0
+      },
+      "pii": {
+        "precision": 1.0,
+        "recall": 0.9984639016897081,
+        "f1-score": 0.9992313604919293,
+        "support": 651.0
       },
       "safe": {
-        "precision": 1.0,
+        "precision": 0.9855072463768116,
         "recall": 1.0,
-        "f1-score": 1.0,
-        "support": 134.0
+        "f1-score": 0.9927007299270073,
+        "support": 136.0
       },
-      "sensitive": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1-score": 1.0,
-        "support": 134.0
-      },
-      "accuracy": 1.0,
+      "accuracy": 0.9992322456813819,
       "macro avg": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1-score": 1.0,
-        "support": 402.0
+        "precision": 0.8309178743961353,
+        "recall": 0.8330773169482847,
+        "f1-score": 0.8319886817364894,
+        "support": 2605.0
       },
       "weighted avg": {
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1-score": 1.0,
-        "support": 402.0
+        "precision": 0.9988594953962558,
+        "recall": 0.9992322456813819,
+        "f1-score": 0.9990429615932126,
+        "support": 2605.0
       }
     }
   },
   "behavior_model": {
-    "dataset_size": 1200,
+    "dataset_source": "synthetic_fallback_not_enough_real_rows",
+    "dataset_size": 1650,
+    "label_distribution": {
+      "0": 1200,
+      "1": 450
+    },
     "test_accuracy": 1.0,
     "test_macro_f1": 1.0,
+    "avg_positive_probability": 0.2724,
     "feature_importances": {
-      "gio_gui": 0.0989,
-      "la_ngoai_cong_ty": 0.1699,
-      "dung_luong_mb": 0.3193,
-      "so_lan_gui": 0.2689,
-      "ip_la": 0.0503,
-      "thiet_bi_la": 0.0866,
-      "usb_copy": 0.0061
+      "num__gio_gui": 0.0634,
+      "num__la_ngoai_cong_ty": 0.1124,
+      "num__dung_luong_mb": 0.2108,
+      "num__so_lan_gui": 0.166,
+      "num__ip_la": 0.0532,
+      "num__thiet_bi_la": 0.0499,
+      "num__usb_copy": 0.031,
+      "cat__channel_Cloud": 0.0005,
+      "cat__channel_Email": 0.0,
+      "cat__channel_Endpoint": 0.0,
+      "cat__channel_SharePoint": 0.0033,
+      "cat__channel_USB": 0.0042,
+      "cat__sender_department_Finance": 0.0,
+      "cat__sender_department_HR": 0.0,
+      "cat__sender_department_IT": 0.0001,
+      "cat__sender_department_R&D": 0.0,
+      "cat__sender_department_Sales": 0.0,
+      "cat__receiver_domain_gmail.com": 0.0216,
+      "cat__receiver_domain_internal": 0.1126,
+      "cat__receiver_domain_partner.com": 0.0024,
+      "cat__receiver_domain_public_cloud": 0.0013,
+      "cat__receiver_domain_unknown": 0.0054,
+      "cat__file_type_docx": 0.0079,
+      "cat__file_type_image": 0.0003,
+      "cat__file_type_pdf": 0.0004,
+      "cat__file_type_source": 0.0012,
+      "cat__file_type_txt": 0.0007,
+      "cat__file_type_xlsx": 0.0,
+      "cat__file_type_zip": 0.0043,
+      "cat__destination_external": 0.0022,
+      "cat__destination_internal": 0.127,
+      "cat__destination_partner": 0.0021,
+      "cat__destination_personal_email": 0.0129,
+      "cat__destination_public_cloud": 0.0027
     },
-    "avg_positive_probability": 0.2497
+    "anomaly_models": [
+      "isolation_forest",
+      "one_class_svm",
+      "local_outlier_factor"
+    ]
   }
 }

@@ -1,4 +1,7 @@
-,pred_leak_risk,pred_safe,pred_sensitive
-true_leak_risk,134,0,0
-true_safe,0,134,0
-true_sensitive,0,0,134
+,pred_confidential,pred_credential,pred_financial,pred_leak_risk,pred_pii,pred_safe
+true_confidential,0,0,0,0,0,1
+true_credential,0,600,0,0,0,0
+true_financial,0,0,483,0,0,0
+true_leak_risk,0,0,0,734,0,0
+true_pii,0,0,0,0,650,1
+true_safe,0,0,0,0,0,136

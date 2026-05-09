@@ -1,0 +1,11 @@
+gio_gui;la_ngoai_cong_ty;dung_luong_mb;so_lan_gui;ip_la;thiet_bi_la;usb_copy;channel;sender_department;receiver_domain;file_type;destination;label
+10;0;3.0;1;0;0;0;Email;Sales;internal;docx;internal;0
+14;0;12.5;2;0;0;0;SharePoint;HR;internal;pdf;internal;0
+9;0;8.0;1;0;0;0;Endpoint;IT;internal;txt;internal;0
+16;1;25.0;2;0;0;0;Email;Finance;partner.com;xlsx;partner;0
+11;0;6.5;1;0;0;0;Cloud;R&D;internal;source;internal;0
+1;1;820.0;11;1;1;1;USB;Finance;gmail.com;zip;personal_email;1
+23;1;640.0;9;1;1;0;Email;Sales;gmail.com;xlsx;personal_email;1
+2;1;1200.0;18;1;1;1;Cloud;HR;public_cloud;zip;public_cloud;1
+22;1;300.0;10;1;0;1;Endpoint;IT;unknown;source;external;1
+3;1;450.0;14;0;1;1;USB;R&D;unknown;source;external;1
